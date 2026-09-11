@@ -2,7 +2,7 @@
 
 用公开的 **ETH / UCY** 行人轨迹数据集，完成 5 个层次的数据分析（A1–A5）。
 
-> 课程作业仓库。**当前进度：Week 01（已完成全部 A1–A5）**
+> 课程作业仓库。**当前进度：Week 01（已完成 A1–A3）**
 
 ---
 
@@ -14,8 +14,6 @@
 | `common/trajlib.py` | 五个场景共用的分析工具库 |
 | `data/raw/` | 原始轨迹数据（5 个场景的 txt） |
 
-**建议先看**：`week01/summary/figures/a8_summary_dashboard.png`
-—— 一页看完 A1–A5 的全部结论。
 
 ---
 
@@ -86,7 +84,7 @@ A4 改用 **k 近邻局部密度**（并用 Voronoi 法交叉验证）。
 ├── data/raw/              原始轨迹数据（*.txt）
 ├── week01/                ★ 本周全部内容
 │   ├── README.md          本周总说明与结论
-│   ├── a1/  a2/  a3/  a4/  a5/
+│   ├── a1/  a2/  a3/ 
 │   ├── compare/           跨场景对比
 │   └── summary/           总结总览图
 └── week02/ … week08/      待完成
@@ -113,11 +111,6 @@ cd week01
 python a1/a1_trajectories.py           # A1 轨迹图
 python a2/a2_kinematics.py             # A2 运动学分布
 python a3/a3_pairwise.py               # A3 最近邻 + TTC
-python a4/a4_fundamental.py            # A4 基本图
-python a5/a5_behavior.py               # A5 成行 + 避让
-python a5/a6_oscillation_bottleneck.py # A5 震荡 + 瓶颈
-python compare/a7_cross_scene.py       # 跨场景对比
-python summary/a8_summary.py           # 总结总览图
 ```
 
 数据在 `data/raw/`，工具库在 `common/trajlib.py`。
